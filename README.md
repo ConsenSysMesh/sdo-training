@@ -1,2 +1,2 @@
 # sdo-training
-Code used for the technical Ethereum training for Smart Dubai Office 
+Demonstration of developing in Ethereum using different languages
