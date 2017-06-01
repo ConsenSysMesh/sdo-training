@@ -33,7 +33,7 @@ import org.web3j.tx.TransactionManager;
 @SuppressWarnings("unused")
 public class App {
 
-	private static String contractAddress;
+	private static String contractAddress = null;
 
 	public static void main(String[] args) throws Exception {
 		// To create a new account just set the credentialsFileName to null
@@ -52,12 +52,10 @@ public class App {
 		// Run: testrpc --account"<private key>,1000000000000000000000"
 
 		// Connecting to a node
-		Web3j web3j = Web3j.build(new HttpService("http://sdo-eth-sandbox.com:8545/"));
-		// Web3j web3j = Web3j.build(new HttpService("http://localhost:8545/"));
-		// Web3j web3j = Web3j.build(new HttpService("http://52.168.38.137:8545/"));
+		Web3j web3j = Web3j.build(new HttpService("http://localhost:8545/"));
 
 		// To deploy the contract again, set to null the contractAddress
-		contractAddress = "0x612d329aea2a4d217d5517d4218e38c709d8efba"; // SDO sandbox
+		// contractAddress = "0x612d329aea2a4d217d5517d4218e38c709d8efba"; // SDO sandbox
 		if (contractAddress == null) {
 			// Deploying a contract
 			TransactionManager transactionManager = new RawTransactionManager(web3j, credentials);

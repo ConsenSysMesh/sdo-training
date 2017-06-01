@@ -11,6 +11,10 @@ To get started:
 3. Try to debug the main class _net.consensys.sample.App_ 
 4. Play with it.
 
+Things you should try:
+- Set _credentialsFileName_ to _null_ in order to create a new account.
+- Set _contractAddress_ with the address of the contract you deployed to reuse it.
+
 ### Folders
 - **contracts**: The smart contract, bytecode and ABI.
 - **src/main/java**: The Java code with the main class as _net.consensys.sample.App_
