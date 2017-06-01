@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:20.0'
+    compile 'org.web3j:core:2.2.1'
+
+    testCompile 'junit:junit:4.12'
+}
