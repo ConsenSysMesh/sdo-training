@@ -1,2 +1,2 @@
 # sdo-training
-Demonstration of developing in Ethereum using different languages
+Ethereum core concepts demonstration, applied to multiple languages
